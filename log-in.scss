@@ -8,14 +8,14 @@
 }
 @mixin style-view ($height){
     border-color: $purp;
-        border-style: solid;
-        border-width: 3px;
-        border-radius: 15px;
-        height: $height;
-        background-color: white;
-        padding: 10px;
-        margin-left: 30%;
-        margin-right: 30%;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    height: $height;
+    background-color: white;
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 @mixin style-button {
     font-family: $fontReg;
@@ -32,7 +32,6 @@ $gray: #cccdd5;
 $fontBold: PF BeauSans Pro-Bold;
 $fontReg: PF BeauSans Pro-Regular;
 
-
 body{
     display: flex;
     flex-direction: column;
@@ -41,7 +40,7 @@ body{
     justify-content: center;
     align-items: stretch;
     height:fit-content;
-    margin-top: 20%;
+    margin-top: 40vmax;
     background-color: $purp;
 }
 main{
@@ -64,7 +63,6 @@ main{
         align-items: center;
         div{
             font-family: $fontReg;
-
             width: 80px;
         }
         input{
@@ -79,5 +77,27 @@ main{
         font-family: $fontBold;
         font-size: 16pt;
         text-align: center;
+    }
+}
+
+@media (max-width: 800px){
+    main{
+        .enter{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 460px){
+    main{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+@media (max-width: 300px){
+    main{
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }

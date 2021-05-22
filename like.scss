@@ -100,11 +100,10 @@ main{
         flex-direction: row;
         #BackPacks{
             @include style-view (auto);
-            // width: 75vmax;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             margin-left: 5px;
             width: 100%;
             padding-top: 20px;
